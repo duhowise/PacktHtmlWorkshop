@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        header,
+        nav,
+        article,
+        section,
+        footer {
+            background: #659494;
+            border-radius: 5px;
+            color: white;
+            font-family: Arial,sans-serif;
+            font-size: 30px;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        header:before,
+        nav:before,
+        /* section:before, */
+        footer:before{
+            content: '<';
+        }
+        header:after,
+        nav:after,
+        /* section:after, */
+        footer:after{
+            content: '>';
+        }
+        section{
+            /* overflow: hidden; */
+            /* display: flex;
+            flex-wrap: wrap; */
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+        }
+        div {
+            /* float: left;
+            width: 25%; */
+            /* flex-basis: 25%; */
+        }
+       
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>nav</nav>
+    <section>
+        <div>product 1</div>
+        <div>Product 2</div>
+        <div>product 3</div>
+        <div>product 4</div>
+        <div>Product 5</div>
+        <div>Product 6</div>
+        <div>Product 7</div>
+        <div>product 8</div>
+    </section>
+        <footer>footer</footer>
+</body>
+</html>
