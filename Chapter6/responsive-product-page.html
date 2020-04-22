@@ -14,30 +14,27 @@
             body {
                 font-family: sans-serif;
                 margin: 0 auto;
-                width: 1200px;
             }
 
             header {
-                align-items: center;
-                display: flex;
-                margin-bottom: 25px;
+                text-align: center;
+
             }
 
             nav {
-                margin-left: 30px;
+                margin-top: 20px;
+                background: black;
             }
 
             .product-cards {
-                display: grid;
-                grid-template-columns: auto auto auto;
+
                 margin-bottom: 30px;
             }
 
             .product-card {
-                font-family: Arial, Helvetica, sans-serif;
-                display: inline-block;
                 border: 1px solid black;
                 padding: 15px;
+                margin: 10px;
             }
 
             .product-card img {
@@ -73,8 +70,7 @@
 
             .intro {
                 margin: 30px;
-                padding-left: 10px;
-                width: 50%;
+                padding: 0 10;
             }
 
             .intro h1 {
@@ -87,11 +83,13 @@
 
             nav ul {
                 display: flex;
-                list-style-type: none;
+                list-style: none;
+                align-items: center;
+                justify-content: center;
             }
 
             nav a {
-                color: black;
+                color: white;
                 font-weight: bold;
                 display: block;
                 padding: 15px;
@@ -99,12 +97,13 @@
             }
 
             nav a:hover {
-                text-decoration: underline;
+                color: red;
             }
 
             .breadcrump {
                 display: flex;
-                list-style-type: none;
+                list-style: none;
+                background: lightgrey;
             }
 
             .breadcrump li {
@@ -127,6 +126,48 @@
 
             .breadcrump a:hover {
                 text-decoration: underline;
+            }
+
+            @media (min-width: 768px) {
+                header {
+                    align-items: center;
+                    display: flex;
+                }
+
+                nav {
+                    background: transparent;
+                    margin-top: 0;
+                    margin-left: 30px;
+                }
+
+                nav a {
+                    color: black;
+                }
+
+                nav a:hover {
+                    text-decoration: underline;
+                    color: black;
+                }
+
+                intro {
+                    width: 50%;
+                }
+
+                .product-cards {
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                }
+
+                .product-card {
+                    display: inline-block;
+                }
+            }
+
+            @media only print {
+                nav {
+                    display: none;
+                }
+
             }
         </style>
     </head>
@@ -160,6 +201,15 @@
         </section>
         <section class="product-cards">
             <!-- product cards will go here -->
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x300/7ebfee/000000.png&text=Product+image+1" alt="Product image 1">
+
+                <h2><a href="">Video title</a></h2>
+                <p class=""></p>
+                <p class="original-price">RRP $18.99</p>
+                <p class="current-price">Price you pay <span>$9.99</span></p>
+                <p class="saving">Your saving $9</p>
+            </div>
             <div class="product-card">
                 <img src="https://dummyimage.com/300x300/7ebfee/000000.png&text=Product+image+1" alt="Product image 1">
 

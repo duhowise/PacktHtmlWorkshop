@@ -1,0 +1,53 @@
+body,button,input,select,textarea{
+    color: #333355;
+}
+
+pre{
+    background: #111111;
+}
+abbr,acronym {
+border-bottom: 1px dotted #999999;
+}
+body{
+    background: #000000;
+}
+hr{
+    background-color: #333333;
+}
+a{
+    color: #add8e6;
+}
+a:visited{
+    color: #b19cd9;
+}
+a:hover,a:focus,a:active{
+    color: #4169e1;
+}
+.content-area{
+    background: #000000;
+}
+header.site-header h1{
+    color: #4c72e5;
+}
+header.site-header h1 a{
+    color: #edc8ad;
+}
+header.site-header nav .menu, header.site-header nav li a {
+    color: #aae8ff;
+}
+
+.blog .site-header, .single-post .site-header{
+    background:#001655;
+}
+article h1 {color: #acd981;}
+ article .content{
+     color: #999999;
+ }
+ 
+ footer.site-footer{
+     color: #4c72e5;
+     background: #aac0ff;
+ }
+ footer.site-footer a{
+    color: #4c72e5;
+}
