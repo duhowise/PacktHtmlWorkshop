@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css Transitions and controls</title>
+        <style>
+            .transition-me {
+                padding: 16px;
+                color: chocolate;
+                background: ghostwhite;
+                transition-duration: 0.5s, 0.5s, 0.3s;
+                transition-delay: 0s, 0.5s, 1s;
+                transition-property: background, color, paddin-left;
+                cursor: pointer;
+                
+
+
+
+            }
+
+            .transition-me:hover {
+                background: honeydew;
+                color: purple;
+                padding-left: 32px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="transition-me">
+            Css transition enhanced control
+        </div>
+    </body>
+
+</html>

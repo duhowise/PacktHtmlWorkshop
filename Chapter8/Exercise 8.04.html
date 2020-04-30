@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css transition with multiple values</title>
+        <style>
+            .transition-me {
+                height: 100px;
+                background: lightskyblue;
+                border: 10px solid wheat;
+                cursor: pointer;
+                transition-property: background 0.5s, border 0.3s 1s, font-size 0.5s;
+            }
+
+            .transition-me:hover {
+                background: orange;
+                font-size: 32px;
+                border-color: teal;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="transition-me">
+            Css transition with multiple values
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Video product page</title>
+        <style type="text/css">
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: sans-serif;
+                margin: 0 auto;
+            }
+
+            header {
+                text-align: center;
+
+            }
+
+            nav {
+                margin-top: 20px;
+                background: black;
+            }
+
+            .product-cards {
+
+                margin-bottom: 30px;
+            }
+
+            .product-card {
+                border: 1px solid black;
+                padding: 15px;
+                margin: 10px;
+            }
+
+            .product-card img {
+                width: 100%;
+            }
+
+            .product-card h2 {
+                margin: 30px 0 15px;
+            }
+
+            .product-card a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .product-card p {
+                line-height: 1.5;
+            }
+
+            .original-price {
+                color: gray;
+                text-transform: uppercase;
+            }
+
+            .current-price span {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
+            .saving {
+                color: green;
+            }
+
+            .intro {
+                margin: 30px;
+                padding: 0 10;
+            }
+
+            .intro h1 {
+                margin-bottom: 15px;
+            }
+
+            .intro p {
+                line-height: 1.5;
+            }
+
+            nav ul {
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: center;
+            }
+
+            nav a {
+                color: white;
+                font-weight: bold;
+                display: block;
+                padding: 15px;
+                text-decoration: none;
+            }
+
+            nav a:hover {
+                color: red;
+            }
+
+            .breadcrump {
+                display: flex;
+                list-style: none;
+                background: lightgrey;
+            }
+
+            .breadcrump li {
+                padding: 10px;
+            }
+
+            .breadcrump li:after {
+                content: '/';
+                margin-left: 20px;
+            }
+
+            .breadcrump li:last-child:after {
+                content: '';
+            }
+
+            .breadcrump a {
+                color: black;
+                text-decoration: none;
+            }
+
+            .breadcrump a:hover {
+                text-decoration: underline;
+            }
+
+            @media (min-width: 768px) {
+                header {
+                    align-items: center;
+                    display: flex;
+                }
+
+                nav {
+                    background: transparent;
+                    margin-top: 0;
+                    margin-left: 30px;
+                    position: relative;
+                    top: 0;
+                    transition: top .5s, color .5s;
+                }
+
+                nav a {
+                    color: black;
+                }
+
+                nav a:hover {
+                    top: -10px;
+                    text-decoration: none;
+                    color: red;
+                }
+
+                intro {
+                    width: 50%;
+                }
+
+                .product-cards {
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                }
+
+                .product-card {
+                    display: inline-block;
+                }
+            }
+
+            .product-card:hover {
+                animation: productCards 2s;
+            }
+
+            .product-card:hover a {
+                color: white;
+            }
+
+            @media only print {
+                nav {
+                    display: none;
+                }
+
+            }
+
+            @keyframes productCards {
+                from {
+                    background-color: white;
+                    color: black;
+                    border-width: 1px;
+                    padding: 15px;
+                }
+
+                to {
+                    background-color: black;
+                    color: white;
+                    border-width: 5px;
+                    padding: 11px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="https://dummyimage.com/200x100/000/fff&text=Logo" alt="Logo">
+            <!-- navigation will go here -->
+            <nav>
+                <ul>
+                    <li><a href="">Videos to rent</a></li>
+                    <li><a href="">Videos to buy</a></li>
+                    <li><a href="">Used DVDs</a></li>
+                    <li><a href="">Offers</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <!-- breadcrumps will go here -->
+            <ol class="breadcrump">
+                <li><a href="">Home</a></li>
+                <li><a href="">Used DVDs</a></li>
+                <li>Less than $10</li>
+            </ol>
+        </section>
+        <section class="intro">
+            <!-- introduction section will go here -->
+            <h1>Videos less than $10</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In bibendum non purus quis vestibulum.
+                Pellentesque ultricies quam lacus, ut tristique sapien tristique et.</p>
+        </section>
+        <section class="product-cards">
+            <!-- product cards will go here -->
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x300/7ebfee/000000.png&text=Product+image+1" alt="Product image 1">
+
+                <h2><a href="">Video title</a></h2>
+                <p class=""></p>
+                <p class="original-price">RRP $18.99</p>
+                <p class="current-price">Price you pay <span>$9.99</span></p>
+                <p class="saving">Your saving $9</p>
+            </div>
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x300/7ebfee/000000.png&text=Product+image+1" alt="Product image 1">
+
+                <h2><a href="">Video title</a></h2>
+                <p class=""></p>
+                <p class="original-price">RRP $18.99</p>
+                <p class="current-price">Price you pay <span>$9.99</span></p>
+                <p class="saving">Your saving $9</p>
+            </div>
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x300/7ebfee/000000.png&text=Product+image+1" alt="Product image 1">
+
+                <h2><a href="">Video title</a></h2>
+                <p class=""></p>
+                <p class="original-price">RRP $18.99</p>
+                <p class="current-price">Price you pay <span>$9.99</span></p>
+                <p class="saving">Your saving $9</p>
+            </div>
+            <div class="product-card">
+                <img src="https://dummyimage.com/300x300/7ebfee/000000.png&text=Product+image+1" alt="Product image 1">
+
+                <h2><a href="">Video title</a></h2>
+                <p class=""></p>
+                <p class="original-price">RRP $18.99</p>
+                <p class="current-price">Price you pay <span>$9.99</span></p>
+                <p class="saving">Your saving $9</p>
+            </div>
+        </section>
+    </body>
+
+</html>
