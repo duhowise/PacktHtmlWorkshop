@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #CCC;
+  border-bottom: 1px solid #663399;
+}
+
+@media (min-width: 768px) {
+  article article {
+    background: #fff;
+  }
+}
+
+article p {
+  color: red;
+}
+
+article p a {
+  color: blue;
+}
+
+article p a:hover {
+  text-decoration: underline;
+}
+
+article:nth-child(odd) {
+  background: #FFF;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #663399;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #663399;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+p.primary {
+  color: #663399;
+}
+
+p.secondary {
+  color: #D2691E;
+}
+
+ul li {
+  margin: 0 10px 0 20px;
+  font-size: 14px;
+  color: #CD5C5C;
+}
+
+ul li:nth-child(even) {
+  color: #D2691E;
+}
